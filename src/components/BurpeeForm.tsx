@@ -3,6 +3,7 @@ import { superstructResolver } from '@hookform/resolvers/superstruct';
 import { Title, Group, Button, Text, Paper, TextInput } from '@mantine/core';
 import { object, Describe, number } from 'superstruct';
 import create from 'zustand';
+import { round } from '../utils';
 
 export interface BurpeeData {
     quantity: number;
@@ -35,10 +36,6 @@ function calculateBurpeePoints(data: BurpeeData) {
     }
 
     const points = data.quantity * multiplier;
-
-    const round = (number: number) => {
-        return Math.round(number * 100) / 100;
-    };
 
     return round(points);
 }

@@ -3,6 +3,7 @@ import { superstructResolver } from '@hookform/resolvers/superstruct';
 import { TextInput, Title, Group, Button, Text, Paper } from '@mantine/core';
 import { object, Describe, number, coerce, string } from 'superstruct';
 import create from 'zustand';
+import { round, stringToFloat } from '../utils';
 
 export interface Pace {
     minutes: number;
@@ -77,15 +78,7 @@ function calculateRunPoints(data: RunData) {
 
     const points = (base + increment) * data.distance;
 
-    const round = (number: number) => {
-        return Math.round(number * 100) / 100;
-    };
-
     return round(points);
-}
-
-function stringToFloat(text: string): number {
-    return parseFloat(text.replace(',', '.'));
 }
 
 export interface RunState {

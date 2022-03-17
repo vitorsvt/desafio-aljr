@@ -3,6 +3,7 @@ import { superstructResolver } from '@hookform/resolvers/superstruct';
 import { Title, Group, Button, Text, Paper, TextInput } from '@mantine/core';
 import { object, Describe, number } from 'superstruct';
 import create from 'zustand';
+import { round, stringToFloat } from '../utils';
 
 export interface SwimData {
     distance: number;
@@ -22,21 +23,12 @@ function calculateSwimPoints(data: SwimData) {
 
     const points = multiplier * 30;
 
-    const round = (number: number) => {
-        return Math.round(number * 100) / 100;
-    };
-
     return round(points);
 }
 
 export interface SwimState {
     points: number;
     setPoints: (value: number) => void;
-}
-
-function stringToFloat(text: string): number {
-    const value = parseFloat(text.replace(',', '.'));
-    return value;
 }
 
 export function SwimForm() {
