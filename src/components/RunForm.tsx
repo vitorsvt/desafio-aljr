@@ -45,39 +45,37 @@ function calculateRunPoints(data: RunData) {
     console.log(data);
 
     let base = 0;
-    let increment = 0;
+    let altimetryIncrement: number[];
 
     if (data.pace.minutes < 5) {
+        altimetryIncrement = [5, 5, 5, 5, 5, 10, 10];
         base = 70;
-        increment = 5;
     } else if (data.pace.minutes < 6) {
+        altimetryIncrement = [5, 5, 5, 5, 5, 10, 10];
         base = 60;
-        increment = 5;
     } else if (data.pace.minutes < 8) {
+        altimetryIncrement = [5, 5, 5, 5, 5, 10, 10];
         base = 50;
-        increment = 5;
     } else if (data.pace.minutes < 10) {
+        altimetryIncrement = [2.5, 2.5, 5, 5, 5, 15, 20];
         base = 35;
-        increment = 2.5;
     } else if (data.pace.minutes < 12) {
+        altimetryIncrement = [2.5, 2.5, 5, 5, 5, 15, 20];
         base = 25;
-        increment = 2.5;
     } else {
+        altimetryIncrement = [2.5, 2.5, 5, 5, 5, 15, 20];
         base = 15;
-        increment = 2.5;
     }
 
-    let multiplier = 0;
+    let increment = 0;
     const altimetryOptions = [50, 100, 200, 300, 400, 500, 1000];
-    for (const altimetry of altimetryOptions) {
+    altimetryOptions.forEach((altimetry, index) => {
         if (data.altimetry > altimetry) {
-            multiplier++;
-        } else {
-            break;
+            increment += altimetryIncrement[index];
         }
-    }
+    });
 
-    const points = (base + increment * multiplier) * data.distance;
+    const points = (base + increment) * data.distance;
 
     const round = (number: number) => {
         return Math.round(number * 100) / 100;

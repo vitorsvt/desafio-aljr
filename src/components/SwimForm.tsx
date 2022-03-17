@@ -20,7 +20,7 @@ const useStore = create<SwimState>((set) => ({
 function calculateSwimPoints(data: SwimData) {
     const multiplier = data.distance / 100;
 
-    const points = multiplier * 40;
+    const points = multiplier * 30;
 
     const round = (number: number) => {
         return Math.round(number * 100) / 100;
