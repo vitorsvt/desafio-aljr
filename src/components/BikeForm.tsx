@@ -80,7 +80,7 @@ export function BikeForm() {
             })}
         >
             <Group direction="column" position="center" grow>
-                <Title order={2}>Calcular pontuação de pedalada</Title>
+                <Title order={2}>Pontuação de pedalada</Title>
                 <TextInput
                     variant="filled"
                     placeholder="Distância"

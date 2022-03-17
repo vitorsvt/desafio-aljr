@@ -114,7 +114,7 @@ export function RunForm() {
             })}
         >
             <Group direction="column" position="center" grow>
-                <Title order={2}>Calcular pontuação de caminhada/corrida</Title>
+                <Title order={2}>Pontuação de caminhada/corrida</Title>
                 <TextInput
                     variant="filled"
                     placeholder="Distância"

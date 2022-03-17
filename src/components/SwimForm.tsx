@@ -60,7 +60,7 @@ export function SwimForm() {
             })}
         >
             <Group direction="column" position="center" grow>
-                <Title order={2}>Calcular pontuação de natação</Title>
+                <Title order={2}>Pontuação de natação</Title>
                 <TextInput
                     variant="filled"
                     placeholder="Distância"

@@ -69,7 +69,7 @@ export function BurpeeForm() {
             })}
         >
             <Group direction="column" position="center" grow>
-                <Title order={2}>Calcular pontuação de burpees</Title>
+                <Title order={2}>Pontuação de burpees</Title>
                 <TextInput
                     variant="filled"
                     placeholder="Burpees"
