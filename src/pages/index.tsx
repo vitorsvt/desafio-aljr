@@ -11,7 +11,7 @@ export default function Index() {
     return (
         <>
             <Head>
-                <link rel="shortcut icon" href="/favicon.ico" />
+                <link rel="shortcut icon" href="./favicon.ico" />
                 <title>Desafio ALJR</title>
             </Head>
             <Header />
