@@ -1,59 +1,15 @@
-import { useForm } from 'react-hook-form';
 import { superstructResolver } from '@hookform/resolvers/superstruct';
-import { TextInput, Title, Group, Button, Text, Paper } from '@mantine/core';
-import { object, Describe, number } from 'superstruct';
-import create from 'zustand';
-import { round, stringToFloat } from '../utils';
-
-export interface BikeData {
-    distance: number;
-    altimetry: number;
-    speed: number;
-}
-
-const BikeDataSchema: Describe<BikeData> = object({
-    distance: number(),
-    altimetry: number(),
-    speed: number()
-});
-
-const useStore = create<BikeState>((set) => ({
-    points: 0,
-    setPoints: (value) => set((_) => ({ points: value }))
-}));
-
-function calculateBikePoints(data: BikeData) {
-    let base = 0;
-
-    if (data.speed > 28) {
-        base = 12;
-    } else if (data.speed > 20) {
-        base = 11;
-    } else {
-        base = 10;
-    }
-
-    let increment = 0;
-    const altimetryOptions = [150, 300, 450, 600, 750, 999, 1999];
-    const altimetryIncrement = [2.5, 1.0, 0.5, 0.5, 0.5, 0.5, 0.5];
-    altimetryOptions.forEach((altimetry, index) => {
-        if (data.altimetry > altimetry) {
-            increment += altimetryIncrement[index];
-        }
-    });
-
-    const points = (base + increment) * data.distance;
-
-    return round(points);
-}
-
-export interface BikeState {
-    points: number;
-    setPoints: (value: number) => void;
-}
+import { TextInput, Title, Group, Paper } from '@mantine/core';
+import { useForm } from 'react-hook-form';
+import { stringToFloat } from '../../../utils/mathUtils';
+import { Points } from '../../Points';
+import { BikeData } from '../models/BikeData';
+import { calculatePoints } from '../services/calculatePoints';
+import { bikeDataSchema } from '../services/validation';
+import { useStore } from '../services/useStore';
+import { SubmitButton } from '../../SubmitButton';
 
 export function BikeForm() {
-    const points = useStore((state) => state.points);
     const setPoints = useStore((state) => state.setPoints);
 
     const {
@@ -61,7 +17,7 @@ export function BikeForm() {
         handleSubmit,
         formState: { errors }
     } = useForm<BikeData>({
-        resolver: superstructResolver(BikeDataSchema)
+        resolver: superstructResolver(bikeDataSchema)
     });
 
     return (
@@ -69,7 +25,7 @@ export function BikeForm() {
             component="form"
             my="xl"
             onSubmit={handleSubmit((data) => {
-                setPoints(calculateBikePoints(data));
+                setPoints(calculatePoints(data));
             })}
         >
             <Group direction="column" position="center" grow>
@@ -102,11 +58,9 @@ export function BikeForm() {
                     error={errors.speed?.message}
                 />
 
-                <Button color="red" type="submit">
-                    Calcular pontuação
-                </Button>
+                <SubmitButton />
 
-                <Text color="gray">{`Pontuação: ${points}`}</Text>
+                <Points useStore={useStore} />
             </Group>
         </Paper>
     );
