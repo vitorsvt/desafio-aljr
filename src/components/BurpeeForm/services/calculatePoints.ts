@@ -1,4 +1,4 @@
-import { round } from '../../../utils/mathUtils';
+import { round } from '../../../services/mathUtils';
 import { BurpeeData } from '../models/BurpeeData';
 
 export function calculatePoints(data: BurpeeData) {

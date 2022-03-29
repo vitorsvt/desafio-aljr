@@ -1,7 +1,7 @@
 import { superstructResolver } from '@hookform/resolvers/superstruct';
 import { TextInput, Title, Group, Paper } from '@mantine/core';
 import { useForm } from 'react-hook-form';
-import { stringToFloat } from '../../../utils/mathUtils';
+import { stringToFloat } from '../../../services/mathUtils';
 import { Points } from '../../Points';
 import { BikeData } from '../models/BikeData';
 import { calculatePoints } from '../services/calculatePoints';

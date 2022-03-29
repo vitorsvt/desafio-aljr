@@ -1,4 +1,4 @@
-import { round } from '../../../utils/mathUtils';
+import { round } from '../../../services/mathUtils';
 import { RunData } from '../models/RunData';
 
 export function calculatePoints(data: RunData) {

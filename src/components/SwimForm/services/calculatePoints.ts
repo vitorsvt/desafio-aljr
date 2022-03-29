@@ -1,4 +1,4 @@
-import { round } from '../../../utils/mathUtils';
+import { round } from '../../../services/mathUtils';
 import { SwimData } from '../models/SwimData';
 
 export function calculatePoints(data: SwimData) {
