@@ -21,7 +21,12 @@ export function calculatePoints(data: BikeData) {
         }
     });
 
-    const points = (base + increment) * data.distance;
+    const multiplier = base + increment;
+    const points = multiplier * data.distance;
 
-    return round(points);
+    return {
+        multiplier: multiplier,
+        quantity: data.distance,
+        points: round(points)
+    };
 }

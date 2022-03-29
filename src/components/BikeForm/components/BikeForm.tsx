@@ -1,5 +1,5 @@
 import { superstructResolver } from '@hookform/resolvers/superstruct';
-import { TextInput, Title, Group, Paper } from '@mantine/core';
+import { TextInput, Title, Group, Paper, Button } from '@mantine/core';
 import { useForm } from 'react-hook-form';
 import { stringToFloat } from '../../../services/mathUtils';
 import { Points } from '../../Points';
@@ -7,27 +7,23 @@ import { BikeData } from '../models/BikeData';
 import { calculatePoints } from '../services/calculatePoints';
 import { bikeDataSchema } from '../services/validation';
 import { useStore } from '../services/useStore';
-import { SubmitButton } from '../../SubmitButton';
+import { showNotification } from '@mantine/notifications';
+import { activityListStore } from '../../ActivityList/components/ActivityList';
 
 export function BikeForm() {
     const setPoints = useStore((state) => state.setPoints);
+    const addActivity = activityListStore((state) => state.addActivity);
 
     const {
         register,
         handleSubmit,
         formState: { errors }
     } = useForm<BikeData>({
-        resolver: superstructResolver(bikeDataSchema)
+        resolver: superstructResolver(bikeDataSchema, { coerce: true })
     });
 
     return (
-        <Paper
-            component="form"
-            my="xl"
-            onSubmit={handleSubmit((data) => {
-                setPoints(calculatePoints(data));
-            })}
-        >
+        <Paper component="form" my="xl">
             <Group direction="column" position="center" grow>
                 <Title order={2}>Pontuação de pedalada</Title>
                 <TextInput
@@ -58,7 +54,35 @@ export function BikeForm() {
                     error={errors.speed?.message}
                 />
 
-                <SubmitButton />
+                <Group grow>
+                    <Button
+                        color="red"
+                        onClick={handleSubmit(
+                            (data) => {
+                                console.log(data);
+                                const score = calculatePoints(data);
+                                setPoints(score.points);
+                            },
+                            (data) => console.log(data)
+                        )}
+                    >
+                        Calcular pontuação
+                    </Button>
+                    <Button
+                        color="blue"
+                        onClick={handleSubmit((data) => {
+                            const score = calculatePoints(data);
+                            setPoints(score.points);
+                            addActivity({ score, data });
+                            showNotification({
+                                title: 'Sucesso',
+                                message: 'Atividade salva'
+                            });
+                        })}
+                    >
+                        Salvar atividade
+                    </Button>
+                </Group>
 
                 <Points useStore={useStore} />
             </Group>

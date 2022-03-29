@@ -1,7 +1,7 @@
 import { round } from '../../../services/mathUtils';
 import { RunData } from '../models/RunData';
 
-export function calculatePoints(data: RunData) {
+export function calculateScore(data: RunData) {
     console.log(data);
 
     let base = 0;
@@ -35,7 +35,12 @@ export function calculatePoints(data: RunData) {
         }
     });
 
-    const points = (base + increment) * data.distance;
+    const multiplier = base + increment;
+    const points = multiplier * data.distance;
 
-    return round(points);
+    return {
+        quantity: data.distance,
+        multiplier: multiplier,
+        points: round(points)
+    };
 }

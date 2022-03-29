@@ -20,5 +20,9 @@ export function calculatePoints(data: BurpeeData) {
 
     const points = data.quantity * multiplier;
 
-    return round(points);
+    return {
+        quantity: data.quantity,
+        multiplier: multiplier,
+        points: round(points)
+    };
 }

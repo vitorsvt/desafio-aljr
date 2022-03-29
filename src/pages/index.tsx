@@ -6,6 +6,7 @@ import { BikeForm } from '../components/BikeForm';
 import { BurpeeForm } from '../components/BurpeeForm';
 import { SwimForm } from '../components/SwimForm';
 import Head from 'next/head';
+import { ActivityList } from '../components/ActivityList';
 
 export default function Index() {
     return (
@@ -15,11 +16,12 @@ export default function Index() {
                 <title>Desafio ALJR</title>
             </Head>
             <Header />
-            <Group direction="column" px="xl" spacing="xl" align="stretch" grow>
+            <Group direction="column" p="xl" spacing="xl" align="stretch" grow>
                 <BurpeeForm />
                 <SwimForm />
                 <BikeForm />
                 <RunForm />
+                <ActivityList />
             </Group>
             <Footer />
         </>
