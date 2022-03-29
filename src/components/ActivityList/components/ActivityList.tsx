@@ -11,6 +11,7 @@ import { Key } from 'react';
 import create from 'zustand';
 
 import { Activity } from '../../../models/Activity';
+import { round } from '../../../services/mathUtils';
 import { BikeData, isBike } from '../../BikeForm/models/BikeData';
 import { BurpeeData, isBurpee } from '../../BurpeeForm/models/BurpeeData';
 import { isRun, RunData } from '../../RunForm/models/RunData';
@@ -18,12 +19,15 @@ import { isSwim, SwimData } from '../../SwimForm/models/SwimData';
 
 interface ActivityListState {
     activities: Activity[];
+    loadActivities: (activities: Activity[]) => void;
     addActivity: (activity: Activity) => void;
     removeActivity: (activity: Activity) => void;
+    removeAll: () => void;
 }
 
 export const activityListStore = create<ActivityListState>((set) => ({
     activities: [],
+    loadActivities: (activities) => set(() => ({ activities })),
     addActivity: (activity) =>
         set((state) => ({
             activities: [...state.activities, activity]
@@ -33,7 +37,8 @@ export const activityListStore = create<ActivityListState>((set) => ({
             activities: state.activities.filter(
                 (element) => element != activity
             )
-        }))
+        })),
+    removeAll: () => set(() => ({ activities: [] }))
 }));
 
 export interface SwimListItemProps {
@@ -207,8 +212,48 @@ export function ActivityListItem({ activity, key }: ActivityListItemProps) {
     );
 }
 
+function activitiesToText(activities: Activity[]) {
+    const lines: string[] = [];
+    let total = 0;
+
+    for (const { data, score } of activities) {
+        let title = 'Atividade';
+        let unit = '';
+
+        if (isRun(data)) {
+            unit = 'km';
+            if (data.pace.minutes >= 8) {
+                title = 'Caminhada';
+            } else {
+                title = 'Corrida';
+            }
+        } else if (isBurpee(data)) {
+            title = 'Burpee';
+        } else if (isBike(data)) {
+            unit = 'km';
+            title = 'Pedalada';
+        } else if (isSwim(data)) {
+            unit = 'm';
+            title = 'Natação';
+        }
+
+        total += score.points;
+
+        lines.push(
+            `${title}: ${score.quantity}${unit} * ${score.multiplier} = ${score.points}`
+        );
+    }
+
+    lines.push(`*Total: ${round(total)} pontos*`);
+
+    return lines;
+}
+
 export function ActivityList() {
-    const activities = activityListStore((state) => state.activities);
+    const [removeAll, activities] = activityListStore((state) => [
+        state.removeAll,
+        state.activities
+    ]);
 
     return (
         <Group direction="column" spacing="xl" align="stretch" grow>
@@ -223,10 +268,16 @@ export function ActivityList() {
             {activities.map((score, index) => (
                 <ActivityListItem key={index} activity={score} />
             ))}
-            <Group grow>
-                <Button color="green">Compartilhar</Button>
-                <Button color="red">Excluir tudo</Button>
-            </Group>
+            {activities.length > 0 && (
+                <Card p="xl" withBorder>
+                    {activitiesToText(activities).map((line) => (
+                        <Text>{line}</Text>
+                    ))}
+                </Card>
+            )}
+            <Button color="red" onClick={removeAll}>
+                Excluir tudo
+            </Button>
         </Group>
     );
 }
