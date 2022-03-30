@@ -183,14 +183,17 @@ export function ActivityListItem({ activity, key }: ActivityListItemProps) {
     const removeActivity = activityListStore((state) => state.removeActivity);
 
     let title = 'Atividade';
+    let unit = '';
 
     if (isRun(data)) {
+        unit = 'km';
         if (data.pace.minutes >= 8) {
             title = 'Caminhada';
         } else {
             title = 'Corrida';
         }
     } else if (isBike(data)) {
+        unit = 'km';
         title = 'Pedalada';
     } else if (isBurpee(data)) {
         title = 'Burpee';
@@ -215,7 +218,7 @@ export function ActivityListItem({ activity, key }: ActivityListItemProps) {
                 {isSwim(data) && <SwimListItem data={data} />}
                 <Tooltip
                     transition="pop"
-                    label={`${quantity} km * ${multiplier} = ${points} pontos`}
+                    label={`${quantity}${unit} * ${multiplier} = ${points} pontos`}
                 >
                     <Card p="xs" withBorder>
                         <Group direction="column" align="center" spacing={0}>
@@ -249,10 +252,8 @@ function activitiesToText(activities: Activity[]) {
         } else if (isBurpee(data)) {
             title = 'Burpee';
         } else if (isBike(data)) {
-            unit = 'km';
             title = 'Pedalada';
         } else if (isSwim(data)) {
-            unit = 'm';
             title = 'Natação';
         }
 
