@@ -66,7 +66,7 @@ export function BikeForm() {
                             (data) => console.log(data)
                         )}
                     >
-                        Calcular pontuação
+                        Calcular
                     </Button>
                     <Button
                         color="blue"
@@ -80,7 +80,7 @@ export function BikeForm() {
                             });
                         })}
                     >
-                        Salvar atividade
+                        Salvar
                     </Button>
                 </Group>
 

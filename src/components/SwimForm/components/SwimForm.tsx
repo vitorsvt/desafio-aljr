@@ -45,7 +45,7 @@ export function SwimForm() {
                             setPoints(score.points);
                         })}
                     >
-                        Calcular pontuação
+                        Calcular
                     </Button>
                     <Button
                         color="blue"
@@ -62,7 +62,7 @@ export function SwimForm() {
                             });
                         })}
                     >
-                        Salvar atividade
+                        Salvar
                     </Button>
                 </Group>
 

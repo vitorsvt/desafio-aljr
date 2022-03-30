@@ -185,7 +185,11 @@ export function ActivityListItem({ activity, key }: ActivityListItemProps) {
     let title = 'Atividade';
 
     if (isRun(data)) {
-        title = 'Caminhada/Corrida';
+        if (data.pace.minutes >= 8) {
+            title = 'Caminhada';
+        } else {
+            title = 'Corrida';
+        }
     } else if (isBike(data)) {
         title = 'Pedalada';
     } else if (isBurpee(data)) {
@@ -197,7 +201,9 @@ export function ActivityListItem({ activity, key }: ActivityListItemProps) {
     return (
         <Card key={key} p="xl" withBorder>
             <Group direction="row" position="apart">
-                <Title order={3}>{title}</Title>
+                <Text weight="bold" size="lg">
+                    {title}
+                </Text>
                 <Button color="red" onClick={() => removeActivity(activity)}>
                     Excluir
                 </Button>

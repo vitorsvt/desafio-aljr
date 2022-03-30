@@ -65,7 +65,7 @@ export function RunForm() {
                             setPoints(score.points);
                         })}
                     >
-                        Calcular pontuação
+                        Calcular
                     </Button>
                     <Button
                         color="blue"
@@ -82,7 +82,7 @@ export function RunForm() {
                             });
                         })}
                     >
-                        Salvar atividade
+                        Salvar
                     </Button>
                 </Group>
 
