@@ -7,7 +7,8 @@ import {
     Title,
     Tooltip
 } from '@mantine/core';
-import { Key } from 'react';
+import localforage from 'localforage';
+import { Key, useEffect } from 'react';
 import create from 'zustand';
 
 import { Activity } from '../../../models/Activity';
@@ -17,9 +18,16 @@ import { BurpeeData, isBurpee } from '../../BurpeeForm/models/BurpeeData';
 import { isRun, RunData } from '../../RunForm/models/RunData';
 import { isSwim, SwimData } from '../../SwimForm/models/SwimData';
 
+localforage.config({
+    name: 'app',
+    version: 1.0,
+    storeName: 'saved_activities',
+    description: 'persistent activities'
+});
+
 interface ActivityListState {
     activities: Activity[];
-    loadActivities: (activities: Activity[]) => void;
+    loadActivities: () => void;
     addActivity: (activity: Activity) => void;
     removeActivity: (activity: Activity) => void;
     removeAll: () => void;
@@ -27,7 +35,12 @@ interface ActivityListState {
 
 export const activityListStore = create<ActivityListState>((set) => ({
     activities: [],
-    loadActivities: (activities) => set(() => ({ activities })),
+    loadActivities: () =>
+        localforage.getItem<Activity[]>('activities').then((activities) => {
+            if (activities !== null) {
+                return set(() => ({ activities }));
+            }
+        }),
     addActivity: (activity) =>
         set((state) => ({
             activities: [...state.activities, activity]
@@ -250,10 +263,17 @@ function activitiesToText(activities: Activity[]) {
 }
 
 export function ActivityList() {
-    const [removeAll, activities] = activityListStore((state) => [
-        state.removeAll,
-        state.activities
-    ]);
+    const [removeAll, loadActivities, activities] = activityListStore(
+        (state) => [state.removeAll, state.loadActivities, state.activities]
+    );
+
+    useEffect(() => {
+        loadActivities();
+    }, []);
+
+    useEffect(() => {
+        localforage.setItem('activities', activities);
+    }, [activities]);
 
     return (
         <Group direction="column" spacing="xl" align="stretch" grow>
@@ -270,8 +290,8 @@ export function ActivityList() {
             ))}
             {activities.length > 0 && (
                 <Card p="xl" withBorder>
-                    {activitiesToText(activities).map((line) => (
-                        <Text>{line}</Text>
+                    {activitiesToText(activities).map((line, index) => (
+                        <Text key={index}>{line}</Text>
                     ))}
                 </Card>
             )}
