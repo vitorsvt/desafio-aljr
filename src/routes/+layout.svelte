@@ -56,6 +56,10 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Desafio ALJR</title>
+</svelte:head>
+
 <Theme />
 
 <Header />
