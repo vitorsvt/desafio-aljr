@@ -18,6 +18,7 @@ const config = {
 			paths: {
 				base: dev ? '' : '/desafio-aljr/docs',
 			},
+			appDir: 'internal',
 		}),
 	}
 };
