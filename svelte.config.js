@@ -16,7 +16,7 @@ const config = {
 	kit: {
 		adapter: adapter({
 			paths: {
-				base: dev ? '' : '/desafio-aljr',
+				base: dev ? '' : '/desafio-aljr/docs',
 			},
 		}),
 	}
