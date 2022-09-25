@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" href="./icon.png" />
+	<meta name="viewport" content="width=device-width" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<meta http-equiv="content-security-policy" content=""><script lang="ts" data-svelte="svelte-4mcql0">"use strict";
+let savedTheme = localStorage.getItem('data-theme');
+if (savedTheme === 'light' || savedTheme === 'dark') {
+    document.documentElement.setAttribute('data-theme', savedTheme);
+}
+</script>
+		<link href="./_app/immutable/assets/_layout-c42f1a55.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/_page-8e01e1ea.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/Section-28c22263.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/start-58082a1e.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index-65ac7bcf.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index-e679accf.js">
+		<link rel="modulepreload" href="./_app/immutable/components/pages/_layout.svelte-ea00a565.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index-450b3fa1.js">
+		<link rel="modulepreload" href="./_app/immutable/modules/pages/_layout.ts-b8ee4d7c.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/_layout-1daba58d.js">
+		<link rel="modulepreload" href="./_app/immutable/components/pages/_page.svelte-7e98a34b.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Section-0ab2d9a7.js">
+</head>
+
+<body>
+	<div>
+
+
+
+
+
+
+<header class="svelte-ikzmiq"><img class="logo svelte-ikzmiq" src="logo.png" alt="ALJR">
+
+	<ul class="svelte-ikzmiq"><li><button><img class="theme-icon svelte-183oz8m" src="sun.svg" alt="Alterar tema"></button></li></ul>
+</header>
+<main><section class="svelte-5tuxw3"><h1 class="svelte-5tuxw3">O Desafio</h1>
+	
+	<p>O desafio é uma competição, sobretudo consigo mesmo, sendo você o seu principal adversário na
+		luta contra maus-hábitos e buscando os substituir por melhores.
+	</p>
+
+	<p>Este desafio será realizado em duas modalidades: INDIVIDUAL e DUPLA, simultaneamente, com METAS
+		de exercícios diários e semanais, além de outras atividades, cada qual valendo pontuação para a
+		competição, premiando os campeões com troféus, medalhas de participação para todos que encararem
+		o desafio e certificado de conclusão do treinamento aos que obtiverem determinado desempenho
+		mínimo. Além de tudo, este é um desafio beneficente, onde contaremos com arrecadação e doação de
+		alimentos a cada meta não alcançada pelos participantes. Portanto, é um método com muitos
+		gatilhos que reforçam sua disciplina, compromisso e consistência, transformando seus hábitos.
+	</p>
+
+	<p>E antes que você se pergunte se será capaz de cumprir as metas, é garantido que sim: as metas
+		são subdivididas em três níveis, tornando-se assim, atingíveis para diferentes capacidades de
+		desempenho. Cada nível terá uma pontuação específica de acordo com a semana em questão.
+	</p>
+</section>
+
+<section class="svelte-5tuxw3"><h1 class="svelte-5tuxw3">Corrida / Caminhada</h1>
+	
+	<form class="svelte-18ybasj"><label class="svelte-18ybasj">Distância (em quilômetros):
+		<div style="display: none;"></div>
+<span class="svelte-18ybasj"></span>
+		<input type="text" name="distance" placeholder="Distância" class="svelte-18ybasj"></label>
+	<label class="svelte-18ybasj">Altimetria (em metros):
+		<div style="display: none;"></div>
+<span class="svelte-18ybasj"></span>
+		<input type="number" name="altimetry" placeholder="Altimetria" class="svelte-18ybasj"></label>
+	<label class="svelte-18ybasj">Ritmo (por quilômetro):
+		<div style="display: none;"></div>
+<span class="svelte-18ybasj"></span>
+		<input type="text" name="pace" placeholder="minutos:segundos por km" class="svelte-18ybasj"></label>
+	<button type="submit" class="svelte-18ybasj">Calcular</button>
+	<p></p>
+</form>
+</section>
+
+<section class="svelte-5tuxw3"><h1 class="svelte-5tuxw3">Pedalada</h1>
+	
+	<form class="svelte-18ybasj"><label class="svelte-18ybasj">Distância (em quilômetros):
+		<div style="display: none;"></div>
+<span class="svelte-18ybasj"></span>
+		<input type="text" name="distance" placeholder="Distância" class="svelte-18ybasj"></label>
+	<label class="svelte-18ybasj">Altimetria (em metros):
+		<div style="display: none;"></div>
+<span class="svelte-18ybasj"></span>
+		<input type="number" name="altimetry" placeholder="Altimetria" class="svelte-18ybasj"></label>
+	<label class="svelte-18ybasj">Velocidade (em quilômetros por hora):
+		<div style="display: none;"></div>
+<span class="svelte-18ybasj"></span>
+		<input type="number" name="speed" placeholder="Velocidade" class="svelte-18ybasj"></label>
+	<button type="submit" class="svelte-18ybasj">Calcular</button>
+	<p></p>
+</form>
+</section>
+
+<section class="svelte-5tuxw3"><h1 class="svelte-5tuxw3">Burpees</h1>
+	
+	<form class="svelte-18ybasj"><label class="svelte-18ybasj">Quantidade em sequência:
+		<div style="display: none;"></div>
+<span class="svelte-18ybasj"></span>
+		<input type="number" name="count" placeholder="Burpees" class="svelte-18ybasj"></label>
+	<button type="submit" class="svelte-18ybasj">Calcular</button>
+	<p></p>
+</form>
+</section>
+
+<section class="svelte-5tuxw3"><h1 class="svelte-5tuxw3">Natação</h1>
+	
+	<form class="svelte-18ybasj"><label class="svelte-18ybasj">Distância (em metros):
+		<div style="display: none;"></div>
+<span class="svelte-18ybasj"></span>
+		<input type="number" name="distance" placeholder="Metros" class="svelte-18ybasj"></label>
+	<button type="submit" class="svelte-18ybasj">Calcular</button>
+	<p></p>
+</form>
+</section>
+
+<section class="svelte-5tuxw3"><h1 class="svelte-5tuxw3">Pontuação bônus</h1>
+	
+	<p>Algumas atividades que ainda serão divulgadas ao longo do desafio valerão pontuação bônus.
+		Outras já estão divulgadas abaixo:
+	</p>
+	<ul class="svelte-pr6tjm"><li class="svelte-pr6tjm"><h2 class="svelte-pr6tjm">LEITURA DE LIVRO:</h2>
+			<p>Comprove que neste desafio, com 10 semanas de oportunidades, você fez a leitura de um livro
+				completo. Mande uma foto do livro e comente sobre sua leitura com o grupo para que seja
+				validada sua pontuação bônus.
+			</p></li>
+		<li class="svelte-pr6tjm"><h2 class="svelte-pr6tjm">DOAÇÃO DE SANGUE:</h2>
+			<p>Comprove que você doou sangue ao longo deste desafio.</p></li>
+		<li class="svelte-pr6tjm"><h2 class="svelte-pr6tjm">TRILHA:</h2>
+			<p>Comprove com fotos que neste desafio, ao longo das 10 semanas você fez uma trilha com
+				duração mínima em torno de 3 horas.
+			</p></li>
+		<li class="svelte-pr6tjm"><h2 class="svelte-pr6tjm">A RECOMPENSA DO HÁBITO:</h2>
+			<p>A recompensa aos disciplinados será em forma de pontuação bônus, caso não haja nenhuma
+				falha, com variação nos pontos bônus de acordo com os títulos conquistados na semana.
+			</p>
+			<table class="svelte-pr6tjm"><thead><tr><th class="svelte-pr6tjm">Descrição</th>
+						<th class="svelte-pr6tjm">Bônus</th></tr></thead>
+				<tbody><tr><td class="svelte-pr6tjm">Melhor ou igual a 8 medalhas</td>
+						<td class="svelte-pr6tjm">300 pontos</td></tr>
+					<tr><td class="svelte-pr6tjm">Melhor ou igual a 8 troféus</td>
+						<td class="svelte-pr6tjm">500 pontos</td></tr>
+					<tr><td class="svelte-pr6tjm">8 coroas</td>
+						<td class="svelte-pr6tjm">700 pontos</td></tr></tbody></table></li></ul>
+</section></main>
+<footer></footer>
+
+
+		<script type="module" data-sveltekit-hydrate="cl0fcf">
+			import { start } from "./_app/immutable/start-58082a1e.js";
+
+			start({
+				env: {},
+				hydrate: {
+					status: 200,
+					error: null,
+					node_ids: [0, 2],
+					params: {},
+					routeId: "",
+					data: (function(a){return [a,a]}(null)),
+					form: null
+				},
+				paths: {"base":"","assets":""},
+				target: document.querySelector('[data-sveltekit-hydrate="cl0fcf"]').parentNode,
+				trailing_slash: "never"
+			});
+		</script>
+	</div>
+</body>
+
+</html>

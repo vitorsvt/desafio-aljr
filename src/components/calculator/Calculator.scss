@@ -1,0 +1,29 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.25rem;
+
+    & span {
+        font-size: 1rem;
+        color: var(--red);
+    }
+}
+
+input {
+    background-color: var(--light-gray);
+    border-radius: 0.25rem;
+}
+
+button {
+    background-color: var(--red);
+    color: var(--white);
+    border-radius: 0.25rem;
+}

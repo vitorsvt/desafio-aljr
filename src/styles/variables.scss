@@ -1,0 +1,11 @@
+@mixin dark-mode {
+    :global(html[data-theme='dark']) {
+        @content;
+    }
+
+    :global(html:not([data-theme])) {
+        @media (prefers-color-scheme: dark) {
+            @content;
+        }
+    }
+}

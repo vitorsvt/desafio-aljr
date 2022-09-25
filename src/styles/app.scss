@@ -1,0 +1,32 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    background-color: transparent;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1rem;
+    color: inherit;
+    text-decoration: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+// global component styling
+
+input,
+button {
+    padding: 0.5rem;
+}
+
+button {
+    font-weight: bold;
+}
