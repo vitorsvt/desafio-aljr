@@ -1,6 +1,6 @@
 {
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-58082a1e.js",
+    "file": "_app/immutable/start-7fa3005e.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -106,10 +106,6 @@
       "src/routes/+page.svelte"
     ]
   },
-  "src/routes/+page.css": {
-    "file": "_app/immutable/assets/_page-8e01e1ea.css",
-    "src": "src/routes/+page.css"
-  },
   "src/routes/+layout.css": {
     "file": "_app/immutable/assets/_layout-c42f1a55.css",
     "src": "src/routes/+layout.css"
@@ -117,5 +113,9 @@
   "Section.css": {
     "file": "_app/immutable/assets/Section-28c22263.css",
     "src": "Section.css"
+  },
+  "src/routes/+page.css": {
+    "file": "_app/immutable/assets/_page-8e01e1ea.css",
+    "src": "src/routes/+page.css"
   }
 }
