@@ -56,7 +56,7 @@
 			b = parsePace(b);
 		}
 
-		return a.minutes >= b.minutes || (a.minutes == b.minutes && a.seconds >= b.seconds);
+		return a.minutes > b.minutes || (a.minutes == b.minutes && a.seconds >= b.seconds);
 	}
 
 	function runFormula(distance: number, pace: Pace, altimetry: number) {

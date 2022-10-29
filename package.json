@@ -4,6 +4,7 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
+		"pages": "yarn build && rm -rf docs && mv build docs && touch docs/.nojekyll",
 		"package": "svelte-kit package",
 		"preview": "vite preview",
 		"test": "playwright test",

@@ -4,8 +4,8 @@
 
 <header>
 	<img class="logo" src="logo.png" alt="ALJR" />
-
 	<ul>
+		<li><a href="/">Calculadora</a></li>
 		<li><ThemeSwitch /></li>
 	</ul>
 </header>
