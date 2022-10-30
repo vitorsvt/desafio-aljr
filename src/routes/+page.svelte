@@ -1,4 +1,5 @@
 <script>
+	import SprawlCalculator from '../components/calculator/SprawlCalculator.svelte';
 	import BurpeeCalculator from '../components/calculator/BurpeeCalculator.svelte';
 	import SwimCalculator from '../components/calculator/SwimCalculator.svelte';
 	import RunCalculator from '../components/calculator/RunCalculator.svelte';
@@ -38,8 +39,12 @@
 	<BikeCalculator />
 </Section>
 
-<Section title="Burpees">
+<Section title="Burpee">
 	<BurpeeCalculator />
+</Section>
+
+<Section title="Meio sugado">
+	<SprawlCalculator />
 </Section>
 
 <Section title="Natação">
