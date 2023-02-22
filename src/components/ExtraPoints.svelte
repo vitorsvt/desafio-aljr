@@ -42,16 +42,20 @@
 				</thead>
 				<tbody>
 					<tr>
-						<td>Melhor ou igual a 8 medalhas</td>
+						<td>No mínimo MEDALHA a cada dia e na semana</td>
 						<td>300 pontos</td>
 					</tr>
 					<tr>
-						<td>Melhor ou igual a 8 troféus</td>
+						<td>No mínimo TROFÉU a cada dia e na semana</td>
 						<td>500 pontos</td>
 					</tr>
 					<tr>
-						<td>8 coroas</td>
+						<td>No mínimo COROA a cada dia e na semana</td>
 						<td>700 pontos</td>
+					</tr>
+					<tr>
+						<td>Todos os FOGUETES da semana</td>
+						<td>900 pontos</td>
 					</tr>
 				</tbody>
 			</table>

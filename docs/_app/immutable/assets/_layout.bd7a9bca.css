@@ -1,0 +1,30 @@
+html{--bg:#f5f5f5;--fg:#24242e;--white:#f5f5f5;--black:#24242e;--light-gray:#e1e3e5;--dark-gray:#6a6a85;--green:#20ac6f;--blue:#4785ff;--red:#fa5252}@media(prefers-color-scheme: dark){html{--bg:#121217;--fg:#f5f5f5;--white:#f5f5f5;--black:#121217;--light-gray:#242435;--dark-gray:#6d6d8b;--green:#3ddc97;--blue:#4785ff;--red:#fa5252}}html[data-theme=light]{--bg:#f5f5f5;--fg:#24242e;--white:#f5f5f5;--black:#24242e;--light-gray:#e1e3e5;--dark-gray:#6a6a85;--green:#20ac6f;--blue:#4785ff;--red:#fa5252}html[data-theme=dark]{--bg:#121217;--fg:#f5f5f5;--white:#f5f5f5;--black:#121217;--light-gray:#242435;--dark-gray:#6d6d8b;--green:#3ddc97;--blue:#4785ff;--red:#fa5252}*{transition:background-color 0.2s}body{color:var(--fg);background-color:var(--bg)}html[data-theme="dark"] .theme-icon.svelte-183oz8m{content:url(/moon.svg)}@media(prefers-color-scheme: dark){html:not([data-theme]) .theme-icon.svelte-183oz8m{content:url(/moon.svg)}}html[data-theme="dark"] .logo.svelte-ikzmiq{content:url(/logo-dark.png)}@media(prefers-color-scheme: dark){html:not([data-theme]) .logo.svelte-ikzmiq{content:url(/logo-dark.png)}}header.svelte-ikzmiq{display:flex;flex-direction:column;align-items:center;gap:2rem;padding:2rem}@media screen and (min-width: 600px){header.svelte-ikzmiq{flex-direction:row;justify-content:space-between}}ul.svelte-ikzmiq{display:flex;flex-direction:column;align-items:center;gap:1rem}@media screen and (min-width: 600px){ul.svelte-ikzmiq{flex-direction:row}}a.svelte-ikzmiq{font-weight:bold}img.svelte-ikzmiq{height:5rem}*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  background-color: transparent;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1rem;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+input,
+button {
+  padding: 0.5rem;
+}
+
+button {
+  font-weight: bold;
+}body{width:100%;display:flex;flex-direction:column;align-items:center}body > div{width:100%;max-width:50rem;display:flex;flex-direction:column;align-items:stretch}
