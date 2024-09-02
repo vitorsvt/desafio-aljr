@@ -57,36 +57,36 @@
 		<li>
 			<h2>LEITURA DE LIVRO:</h2>
 			<p>
-				Comprove que neste desafio, durante o mês de setembro,
+				<i>Comprove que neste desafio, durante o mês de setembro,
 				você fez a leitura de um livro completo. Mande uma foto do livro e comente sobre
-				sua leitura com o grupo para que seja validada sua pontuação.
+				sua leitura com o grupo para que seja validada sua pontuação.</i>
 			</p>
 			<p><b>Leitura de apenas 1 livro durante o desafio todo = 250 pontos</b></p>
 		</li>
 		<li>
 			<h2>DOAÇÃO DE SANGUE:</h2>
 			<p>
-				Comprove que você doou sangue alguma vez dentro
+				<i>Comprove que você doou sangue alguma vez dentro
 				do período do desafio. Caso você esteja no intervalo de doação por todo o
 				desafio, anexe o comprovante da última doação que sua pontuação será
-				validada.
+				validada.</i>
 			</p>
 			<p><b>Pontuação única = 250 pontos</b></p>
 		</li>
 		<li>
 			<h2>TRILHA:</h2>
 			<p>
-				comprove com fotos que neste desafio, ao longo deste desafio você fez
+				<i>Comprove com fotos que neste desafio, ao longo deste desafio você fez
 				uma trilha com duração mínima em torno de 1 hora. A trilha pode ser a pé ou de
-				bicicleta.
+				bicicleta.</i>
 			</p>
 			<p><b>Pontuação válida para apenas 1 trilha = 250 pontos</b></p>
 		</li>
 		<li>
 			<h2>DURAÇÃO MÉDIA DO SONO:</h2>
 			<p>
-				Comprove com aplicativo que ao longo deste
-				desafio, você teve uma duração média de sono superior a 7 horas.
+				<i>Comprove com aplicativo que ao longo deste
+				desafio, você teve uma duração média de sono superior a 7 horas.</i>
 			</p>
 			<p><b>Pontuação única = 250 pontos</b></p>
 		</li>
