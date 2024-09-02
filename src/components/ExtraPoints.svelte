@@ -2,68 +2,102 @@
 	import Section from './Section.svelte';
 </script>
 
+<Section title="Metodologia">
+	<p>
+		<b>Atividades:</b> cada atividade é opcional e vale uma determinada pontuação para o participante. As atividades realizadas deverão ser comprovadas.
+	</p>
+
+	<p>
+		<b>Meta de pontuação do desafio:</b> a meta de pontuação a ser alcançada ao final do desafio é de 10.000 pontos
+	</p>
+</Section>
+
+<Section title="Pontuação em Treinos de Artes Marciais">
+	<p>
+		A pontuação de cada treino de artes marciais é conforme determinação abaixo:
+	</p>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Modalidade</th>
+				<th>Pontuação</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr><td>KRAV MAGA</td><td>550 pontos</td></tr>
+			<tr><td>AULA 6AM</td><td>450 pontos</td></tr>
+			<tr><td>JUDÔ</td><td>450 pontos</td></tr>
+			<tr><td>MUAY THAI/BOXE/KICKBOXING/PARTICULAR</td><td>400 pontos</td></tr>
+			<tr><td>TREINO VIP PASS</td><td>250 pontos</td></tr>
+			<tr><td>SPARRING</td><td>200 pontos</td></tr>
+		</tbody>
+	</table>
+
+	<ul>
+
+	</ul>
+</Section>
+
 <Section title="Pontuação bônus">
 	<p>
-		Algumas atividades que ainda serão divulgadas ao longo do desafio valerão pontuação bônus.
-		Outras já estão divulgadas abaixo:
+		As outras atividades que valem pontuação estão descritas nos próximos tópicos. O participante deverá manter seu controle de pontuação com as devidas comprovações (fotos, vídeos, prints de atividades) e enviar no grupo conforme for executada cada atividade. A pontuação de cada atividade está disposta na sequência deste regulamento.
 	</p>
 	<ul>
 		<li>
+			<h2>TREINO BÔNUS:</h2>
+			<p>
+				Qualquer treino (além de artes marciais) que possa ser comprovado, que tenha duração mínima de em torno de 40 minutos, por exemplo: musculação, funcional, crossfit, dança, futebol, vôlei, futevôlei, basquete, beach tennis, pilates, etc.
+			</p>
+			<p>
+				<i>Comprove que você treinou com timelapse, vídeo ou poste foto/selfie logo após seu treino</i>
+			</p>
+			<p><b>Cada treino = 250 pontos</b></p>
+		</li>
+		<li>
 			<h2>LEITURA DE LIVRO:</h2>
 			<p>
-				Comprove que neste desafio, com 10 semanas de oportunidades, você fez a leitura de um livro
-				completo. Mande uma foto do livro e comente sobre sua leitura com o grupo para que seja
-				validada sua pontuação bônus.
+				Comprove que neste desafio, durante o mês de setembro,
+				você fez a leitura de um livro completo. Mande uma foto do livro e comente sobre
+				sua leitura com o grupo para que seja validada sua pontuação.
 			</p>
+			<p><b>Leitura de apenas 1 livro durante o desafio todo = 250 pontos</b></p>
 		</li>
 		<li>
 			<h2>DOAÇÃO DE SANGUE:</h2>
-			<p>Comprove que você doou sangue ao longo deste desafio.</p>
+			<p>
+				Comprove que você doou sangue alguma vez dentro
+				do período do desafio. Caso você esteja no intervalo de doação por todo o
+				desafio, anexe o comprovante da última doação que sua pontuação será
+				validada.
+			</p>
+			<p><b>Pontuação única = 250 pontos</b></p>
 		</li>
 		<li>
 			<h2>TRILHA:</h2>
 			<p>
-				Comprove com fotos que neste desafio, ao longo das 10 semanas você fez uma trilha com
-				duração mínima em torno de 3 horas.
+				comprove com fotos que neste desafio, ao longo deste desafio você fez
+				uma trilha com duração mínima em torno de 1 hora. A trilha pode ser a pé ou de
+				bicicleta.
 			</p>
+			<p><b>Pontuação válida para apenas 1 trilha = 250 pontos</b></p>
 		</li>
 		<li>
-			<h2>A RECOMPENSA DO HÁBITO:</h2>
+			<h2>DURAÇÃO MÉDIA DO SONO:</h2>
 			<p>
-				A recompensa aos disciplinados será em forma de pontuação bônus, caso não haja nenhuma
-				falha, com variação nos pontos bônus de acordo com os títulos conquistados na semana.
+				Comprove com aplicativo que ao longo deste
+				desafio, você teve uma duração média de sono superior a 7 horas.
 			</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Descrição</th>
-						<th>Bônus</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>No mínimo MEDALHA a cada dia e na semana</td>
-						<td>300 pontos</td>
-					</tr>
-					<tr>
-						<td>No mínimo TROFÉU a cada dia e na semana</td>
-						<td>500 pontos</td>
-					</tr>
-					<tr>
-						<td>No mínimo COROA a cada dia e na semana</td>
-						<td>700 pontos</td>
-					</tr>
-					<tr>
-						<td>Todos os FOGUETES da semana</td>
-						<td>900 pontos</td>
-					</tr>
-				</tbody>
-			</table>
+			<p><b>Pontuação única = 250 pontos</b></p>
 		</li>
 	</ul>
 </Section>
 
 <style lang="scss">
+	b {
+		font-weight: bold;
+	}
+
 	ul {
 		list-style-type: disc;
 		margin-left: 1rem;
