@@ -28,7 +28,7 @@
 			<tr><td>KRAV MAGA</td><td>550 pontos</td></tr>
 			<tr><td>AULA 6AM</td><td>450 pontos</td></tr>
 			<tr><td>JUDÔ</td><td>450 pontos</td></tr>
-			<tr><td>MUAY THAI/BOXE/KICKBOXING/PARTICULAR</td><td>400 pontos</td></tr>
+			<tr><td>MUAY THAI / BOXE / KICKBOXING / PARTICULAR</td><td>400 pontos</td></tr>
 			<tr><td>TREINO VIP PASS</td><td>250 pontos</td></tr>
 			<tr><td>SPARRING</td><td>200 pontos</td></tr>
 		</tbody>
