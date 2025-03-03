@@ -8,35 +8,8 @@
 	</p>
 
 	<p>
-		<b>Meta de pontuação do desafio:</b> a meta de pontuação a ser alcançada ao final do desafio é de 10.000 pontos
+		<b>Meta de pontuação do desafio:</b> 15.000 pontos. Ao alcançar esta pontuação, o participante ganha um número para concorrer aos prêmios da rifa. A cada 1.000 pontos a mais, ganha mais um número para a rifa.
 	</p>
-</Section>
-
-<Section title="Pontuação em Treinos de Artes Marciais">
-	<p>
-		Cada treino de artes marciais deverá ser comprovado, sendo a seguinte pontuação:
-	</p>
-
-	<table>
-		<thead>
-			<tr>
-				<th>Modalidade</th>
-				<th>Pontuação</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr><td>KRAV MAGA</td><td>550 pontos</td></tr>
-			<tr><td>AULA 6AM</td><td>450 pontos</td></tr>
-			<tr><td>JUDÔ / JIU-JITSU</td><td>450 pontos</td></tr>
-			<tr><td>MUAY THAI / BOXE / KICKBOXING / PARTICULAR</td><td>400 pontos</td></tr>
-			<tr><td>TREINO VIP PASS</td><td>250 pontos</td></tr>
-			<tr><td>SPARRING</td><td>200 pontos</td></tr>
-		</tbody>
-	</table>
-
-	<ul>
-
-	</ul>
 </Section>
 
 <Section title="Pontuação bônus">
@@ -44,22 +17,29 @@
 		As outras atividades que valem pontuação estão descritas nos próximos tópicos. O participante deverá manter seu controle de pontuação com as devidas comprovações (fotos, vídeos, prints de atividades) e enviar no grupo conforme for executada cada atividade. A pontuação de cada atividade está disposta na sequência deste regulamento.
 	</p>
 	<ul>
+                <li>
+                        <h2>TREINO DE ARTES MARCIAIS:</h2>
+			<p>
+				<i>Comprove com foto/vídeo seu treino de artes marciais. Não é necessário reenviar foto do treino coletivo, no caso de outro participante já ter enviado. Apenas responda a imagem atualizando seu controle.</i>
+			</p>
+			<p><b>Cada treino = 300 pontos</b></p>
+                </li>
 		<li>
 			<h2>TREINO BÔNUS:</h2>
 			<p>
-				qualquer treino (além de artes marciais) que possa ser comprovado, que tenha duração mínima em torno de 40 minutos, por exemplo: musculação, funcional, crossfit, dança, futebol, vôlei, futevôlei, basquete, beach tennis, pilates, motocross, etc.
+				Qualquer treino (além de artes marciais) que possa ser comprovado, que tenha duração mínima em torno de 40 minutos, por exemplo: musculação, funcional, crossfit, dança, futebol, vôlei, futevôlei, basquete, beach tennis, pilates, motocross, etc.
 			</p>
 			<p>
 				<i>Comprove que você treinou com timelapse, vídeo ou poste foto/selfie logo após seu treino</i>
 			</p>
-			<p><b>Cada treino = 250 pontos</b></p>
+			<p><b>Cada treino = 200 pontos</b></p>
 		</li>
 		<li>
 			<h2>LEITURA DE LIVRO:</h2>
 			<p>
-				<i>comprove que durante todo o período deste desafio, você fez a leitura de um livro completo. Mande uma foto do livro e comente sobre sua leitura com o grupo para que seja validada sua pontuação.</i>
+				<i>Comprove que durante todo o período deste desafio, você fez a leitura de um livro completo. Mande uma foto do livro e comente sobre sua leitura com o grupo para que seja validada sua pontuação.</i>
 			</p>
-			<p><b>Leitura de apenas 1 livro durante o desafio todo = 250 pontos</b></p>
+			<p><b>Leitura de apenas 1 livro durante o desafio todo = 500 pontos</b></p>
 		</li>
 		<li>
 			<h2>DOAÇÃO DE SANGUE:</h2>
@@ -69,14 +49,14 @@
 				desafio, anexe o comprovante da última doação que sua pontuação será
 				validada.</i>
 			</p>
-			<p><b>Pontuação única = 250 pontos</b></p>
+			<p><b>Pontuação única = 1000 pontos</b></p>
 		</li>
 		<li>
 			<h2>TRILHA:</h2>
 			<p>
 				<i>Comprove com fotos que neste desafio você fez uma trilha com duração mínima em torno de 1 hora. A trilha pode ser a pé ou de bicicleta. O trajeto da sua caminhada/corrida/pedal na trilha também será considerado, sendo acrescido os 250 pontos bônus por ter sido realizado em trilha.</i>
 			</p>
-			<p><b>Pontuação válida para apenas 1 trilha = 250 pontos</b></p>
+			<p><b>Pontuação válida para apenas 1 trilha = 500 pontos</b></p>
 		</li>
 		<li>
 			<h2>DURAÇÃO MÉDIA DO SONO:</h2>
