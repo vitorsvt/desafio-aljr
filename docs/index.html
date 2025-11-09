@@ -9,18 +9,18 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
 	<meta http-equiv="content-security-policy" content="">
-		<link href="./_app/immutable/assets/_layout.658f407c.css" rel="stylesheet">
-		<link href="./_app/immutable/assets/_page.84fda5a5.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/_layout.79b125d6.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/_page.8cebd4ff.css" rel="stylesheet">
 		<link href="./_app/immutable/assets/Section.28c22263.css" rel="stylesheet">
-		<link rel="preload" as="script" crossorigin="anonymous" href="./_app/immutable/entry/start.ff798083.mjs">
+		<link rel="preload" as="script" crossorigin="anonymous" href="./_app/immutable/entry/start.d2e9c990.mjs">
 		<link rel="preload" as="script" crossorigin="anonymous" href="./_app/immutable/chunks/index.30199f0d.mjs">
 		<link rel="preload" as="script" crossorigin="anonymous" href="./_app/immutable/chunks/index.7cba9ccc.mjs">
-		<link rel="preload" as="script" crossorigin="anonymous" href="./_app/immutable/entry/app.85a0e4a3.mjs">
-		<link rel="preload" as="script" crossorigin="anonymous" href="./_app/immutable/entry/_layout.svelte.d68d8db7.mjs">
+		<link rel="preload" as="script" crossorigin="anonymous" href="./_app/immutable/entry/app.243b7b02.mjs">
+		<link rel="preload" as="script" crossorigin="anonymous" href="./_app/immutable/entry/_layout.svelte.6d37dde7.mjs">
 		<link rel="preload" as="script" crossorigin="anonymous" href="./_app/immutable/chunks/index.f941b4b4.mjs">
 		<link rel="preload" as="script" crossorigin="anonymous" href="./_app/immutable/entry/_layout.ts.fb1865a6.mjs">
 		<link rel="preload" as="script" crossorigin="anonymous" href="./_app/immutable/chunks/_layout.da46b06b.mjs">
-		<link rel="preload" as="script" crossorigin="anonymous" href="./_app/immutable/entry/_page.svelte.15907973.mjs">
+		<link rel="preload" as="script" crossorigin="anonymous" href="./_app/immutable/entry/_page.svelte.f8e2ec1c.mjs">
 		<link rel="preload" as="script" crossorigin="anonymous" href="./_app/immutable/chunks/Section.19d5f900.mjs"><title>Desafio ALJR</title><!-- HEAD_svelte-11k9cz8_START --><!-- HEAD_svelte-11k9cz8_END --><!-- HEAD_svelte-4mcql0_START --><script lang="ts">"use strict";
 let savedTheme = localStorage.getItem('data-theme');
 if (savedTheme === 'light' || savedTheme === 'dark') {
@@ -45,72 +45,83 @@ if (savedTheme === 'light' || savedTheme === 'dark') {
 </header>
 <main><section class="svelte-5tuxw3"><h1 class="svelte-5tuxw3">Corrida / Caminhada</h1>
 	
-	<form class="svelte-18ybasj"><label class="svelte-18ybasj">Distância (em quilômetros):
+	<form class="svelte-vjui7m"><label class="svelte-vjui7m">Distância (em quilômetros):
 		<div style="display: none;"></div>
-<span class="svelte-18ybasj"></span>
-		<input type="text" name="distance" placeholder="Distância" class="svelte-18ybasj"></label>
-	<label class="svelte-18ybasj">Altimetria (em metros):
+<span class="svelte-vjui7m"></span>
+		<input type="text" name="distance" placeholder="Distância" class="svelte-vjui7m"></label>
+	<label class="svelte-vjui7m">Altimetria (em metros):
 		<div style="display: none;"></div>
-<span class="svelte-18ybasj"></span>
-		<input type="number" name="altimetry" placeholder="Altimetria" class="svelte-18ybasj"></label>
-	<label class="svelte-18ybasj">Ritmo (por quilômetro):
+<span class="svelte-vjui7m"></span>
+		<input type="number" name="altimetry" placeholder="Altimetria" class="svelte-vjui7m"></label>
+	<label class="svelte-vjui7m">Ritmo (por quilômetro):
 		<div style="display: none;"></div>
-<span class="svelte-18ybasj"></span>
-		<input type="text" name="pace" placeholder="minutos:segundos por km" class="svelte-18ybasj"></label>
-	<button type="submit" class="svelte-18ybasj">Calcular</button>
+<span class="svelte-vjui7m"></span>
+		<input type="text" name="pace" placeholder="minutos:segundos por km" class="svelte-vjui7m"></label>
+	<button type="submit" class="svelte-vjui7m">Calcular</button>
 	<p></p>
 </form>
 </section>
 
 <section class="svelte-5tuxw3"><h1 class="svelte-5tuxw3">Pedalada</h1>
 	
-	<form class="svelte-18ybasj"><label class="svelte-18ybasj">Distância (em quilômetros):
+	<form class="svelte-vjui7m"><label class="svelte-vjui7m">Distância (em quilômetros):
 		<div style="display: none;"></div>
-<span class="svelte-18ybasj"></span>
-		<input type="text" name="distance" placeholder="Distância" class="svelte-18ybasj"></label>
-	<label class="svelte-18ybasj">Altimetria (em metros):
+<span class="svelte-vjui7m"></span>
+		<input type="text" name="distance" placeholder="Distância" class="svelte-vjui7m"></label>
+	<label class="svelte-vjui7m">Altimetria (em metros):
 		<div style="display: none;"></div>
-<span class="svelte-18ybasj"></span>
-		<input type="number" name="altimetry" placeholder="Altimetria" class="svelte-18ybasj"></label>
-	<label class="svelte-18ybasj">Velocidade (em quilômetros por hora):
+<span class="svelte-vjui7m"></span>
+		<input type="number" name="altimetry" placeholder="Altimetria" class="svelte-vjui7m"></label>
+	<label class="svelte-vjui7m">Velocidade (em quilômetros por hora):
 		<div style="display: none;"></div>
-<span class="svelte-18ybasj"></span>
-		<input type="number" name="speed" placeholder="Velocidade" class="svelte-18ybasj"></label>
-	<button type="submit" class="svelte-18ybasj">Calcular</button>
+<span class="svelte-vjui7m"></span>
+		<input type="number" name="speed" placeholder="Velocidade" class="svelte-vjui7m"></label>
+	<button type="submit" class="svelte-vjui7m">Calcular</button>
 	<p></p>
 </form>
 </section>
 
 <section class="svelte-5tuxw3"><h1 class="svelte-5tuxw3">Burpee</h1>
 	
-	<form class="svelte-18ybasj"><label class="svelte-18ybasj">Quantidade em sequência:
+	<form class="svelte-vjui7m"><label class="svelte-vjui7m">Quantidade em sequência:
 		<div style="display: none;"></div>
-<span class="svelte-18ybasj"></span>
-		<input type="number" name="count" placeholder="Burpees" class="svelte-18ybasj"></label>
-	<button type="submit" class="svelte-18ybasj">Calcular</button>
+<span class="svelte-vjui7m"></span>
+		<input type="number" name="count" placeholder="Burpees" class="svelte-vjui7m"></label>
+	<button type="submit" class="svelte-vjui7m">Calcular</button>
 	<p></p>
 </form>
 </section>
 
 <section class="svelte-5tuxw3"><h1 class="svelte-5tuxw3">Meio sugado</h1>
 	
-	<form class="svelte-18ybasj"><label class="svelte-18ybasj">Quantidade em sequência:
+	<form class="svelte-vjui7m"><label class="svelte-vjui7m">Quantidade em sequência:
 		<div style="display: none;"></div>
-<span class="svelte-18ybasj"></span>
-		<input type="number" name="count" placeholder="Meio sugado" class="svelte-18ybasj"></label>
-	<button type="submit" class="svelte-18ybasj">Calcular</button>
+<span class="svelte-vjui7m"></span>
+		<input type="number" name="count" placeholder="Meio sugado" class="svelte-vjui7m"></label>
+	<button type="submit" class="svelte-vjui7m">Calcular</button>
 	<p></p>
 </form>
 </section>
 
 <section class="svelte-5tuxw3"><h1 class="svelte-5tuxw3">Natação</h1>
 	
-	<form class="svelte-18ybasj"><label class="svelte-18ybasj">Distância (em metros):
+	<form class="svelte-vjui7m"><label class="svelte-vjui7m">Distância (em metros):
 		<div style="display: none;"></div>
-<span class="svelte-18ybasj"></span>
-		<input type="number" name="distance" placeholder="Metros" class="svelte-18ybasj"></label>
-	<button type="submit" class="svelte-18ybasj">Calcular</button>
+<span class="svelte-vjui7m"></span>
+		<input type="number" name="distance" placeholder="Metros" class="svelte-vjui7m"></label>
+	<button type="submit" class="svelte-vjui7m">Calcular</button>
 	<p></p>
+</form>
+</section>
+
+<section class="svelte-5tuxw3"><h1 class="svelte-5tuxw3">Processar atividades</h1>
+	
+	<p>Processa a lista de atividades de um ou mais participantes e exporta para uma planilha do Excel. <b>(Em fase de testes ainda)</b></p>
+	<form class="svelte-vjui7m"><label class="svelte-vjui7m">Lista de atividades:
+		<div style="display: none;"></div>
+<span class="svelte-vjui7m"></span>
+		<textarea rows="10" name="activities" placeholder="Texto com atividades e pontuação" class="svelte-vjui7m"></textarea></label>
+	<button type="submit" class="svelte-vjui7m">Processar e baixar</button>
 </form>
 </section></main>
 <footer></footer>
@@ -119,7 +130,7 @@ if (savedTheme === 'light' || savedTheme === 'dark') {
 			
 			<script>
 				{
-					__sveltekit_1qy60t7 = {
+					__sveltekit_xpga0j = {
 						env: {},
 						assets: new URL(".", location.href).pathname.replace(/^\/$/, ''),
 						element: document.currentScript.parentElement
@@ -128,10 +139,10 @@ if (savedTheme === 'light' || savedTheme === 'dark') {
 					const data = [null,null];
 
 					Promise.all([
-						import("./_app/immutable/entry/start.ff798083.mjs"),
-						import("./_app/immutable/entry/app.85a0e4a3.mjs")
+						import("./_app/immutable/entry/start.d2e9c990.mjs"),
+						import("./_app/immutable/entry/app.243b7b02.mjs")
 					]).then(([kit, app]) => {
-						kit.start(app, __sveltekit_1qy60t7.element, {
+						kit.start(app, __sveltekit_xpga0j.element, {
 							node_ids: [0, 2],
 							data,
 							form: null,

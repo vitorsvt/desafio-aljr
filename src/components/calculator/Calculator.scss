@@ -17,9 +17,13 @@ label {
     }
 }
 
-input {
+input, textarea {
     background-color: var(--light-gray);
     border-radius: 0.25rem;
+}
+
+textarea {
+    resize: none;
 }
 
 button {

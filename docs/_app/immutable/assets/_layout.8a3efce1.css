@@ -21,7 +21,8 @@ ul {
 }
 
 input,
-button {
+button,
+textarea {
   padding: 0.5rem;
 }
 
